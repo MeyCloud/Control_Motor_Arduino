@@ -18,18 +18,18 @@ void loop() {
   // Gira el motor hacia adelante a velocidad media
   digitalWrite(AIN1, HIGH);
   digitalWrite(AIN2, LOW);
-  analogWrite(PWMA, 128);  // Velocidad (0 a 255)
+  analogWrite(PWMA, 158);  // Velocidad (0 a 255)
 
   delay(3000);  // 3 segundos
 
   // Detener el motor
-  analogWrite(PWMA, 0);
+  analogWrite(PWMA, 50);
   delay(1000);
 
   // Gira el motor hacia atrás
   digitalWrite(AIN1, HIGH);
   digitalWrite(AIN2, LOW);
-  analogWrite(PWMA, 255);  // Velocidad máxima
+  analogWrite(PWMA, 220);  // Velocidad máxima
 
   delay(3000);
 
